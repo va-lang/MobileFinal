@@ -1,3 +1,52 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="tc">
+            <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+            <ion-label>Terms and Conditions</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="pp">
+            <ion-icon name="document-lock-outline" slot="start"></ion-icon>
+            <ion-label>Privacy policy</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      
+        <ion-menu-toggle>
+          <ion-item routerLink="contact">
+            <ion-icon name="call-outline" slot="start"></ion-icon>
+            <ion-label>Contact</ion-label>
+          </ion-item>
+        </ion-menu-toggle>  
+
+        <ion-menu-toggle>
+          <ion-item routerLink="settings">
+            <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+            <ion-label>Back to About</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        
+        <ion-menu-toggle>
+          <ion-item routerLink="profile">
+            <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+            <ion-label>Back to Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+
+      
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
+

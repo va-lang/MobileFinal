@@ -1,0 +1,100 @@
+<ion-content class="ion-padding">
+	<div class="main">
+		<ion-card>
+			<ion-row class="row">
+				<div class="fire-logo">
+					
+					<ion-text>
+						<h2 no-margin margin-vertical text-center style="color: #009FE3;">Companion App</h2>
+					</ion-text>
+				</div>
+			</ion-row>
+			<form>
+				<ion-list>
+					<ion-item>
+						<ion-icon slot="start" name="Person"></ion-icon>
+						<ion-input clearInput Placeholder="Full Name" required type= "text" [(ngModel)]="name" name="name"></ion-input>
+					</ion-item>
+					<ion-item>
+						<ion-icon slot="start" name="call"></ion-icon>
+						<ion-input clearInput placeholder="Phone" required type= "tel" [(ngModel)]="phone" name="phone"></ion-input>
+					</ion-item>
+					<ion-item>
+						<ion-icon slot="start" name="mail"></ion-icon>
+						<ion-input clearInput placeholder="Email" required type="email" [(ngModel)]="email" name="email"></ion-input>
+					</ion-item>
+				
+					<ion-item>
+						<ion-icon slot="start" name="lock-closed"></ion-icon>
+						<ion-input clearInput placeholder="Password" required type= "password" [(ngModel)]="password" name="password"></ion-input>
+					</ion-item>
+				
+					<ion-item>
+						<ion-icon slot="start" name="lock-closed"></ion-icon>
+						<ion-input clearInput placeholder="Confirm Password"required type="password" [(ngModel)]="passwordAgain" name="passwordAgain"></ion-input>
+					</ion-item>
+				
+					<ion-button class="register-button" type="submit" expand="block" shape="round" (click)="register()">Register</ion-button>
+					
+					<br>
+					<ion-text text-center class="block">Already have an account? <span class="bold" routerLink="/login">Login</span></ion-text>
+					<br>
+				</ion-list>
+			</form>
+		</ion-card>
+	</div>
+</ion-content>
+  
+
+<!-- <ion-content no-padding>
+	<div class="main">
+	  <ion-card no-margin>
+		<ion-card-content>
+		  <ion-row class="row">
+			<div class="fire-logo">
+			  <img src="assets/logo with text.png">
+			  <ion-text>
+				<h2 no-margin margin-vertical text-center>Sign up</h2>
+			  </ion-text>
+			</div>
+		  </ion-row>
+		  <ion-row>
+			<ion-col>
+			  <ion-input clearInput type="email" placeholder="Email" [(ngModel)]="username" class="input" padding-horizontal
+				clear-input="true"></ion-input>
+			</ion-col>
+		  </ion-row>
+		  <ion-row>
+			<ion-col>
+			  <ion-input clearInput type="password" placeholder="Password" [(ngModel)]="password" class="input" padding-horizontal
+				clear-input="true"></ion-input>
+			</ion-col>
+		  </ion-row>
+		  <ion-row>
+			<ion-col>
+			  <ion-input clearInput type="password" placeholder="Verify Password" [(ngModel)]="cpassword" class="input"
+				padding-horizontal clear-input="true"></ion-input>
+			</ion-col>
+		  </ion-row>
+		  <ion-row>
+			<ion-col>
+			  <ion-button expand="block" (click)="register()" color="undefined" class="transition">
+				<strong class="white">
+				  Register</strong></ion-button>
+			</ion-col>
+		  </ion-row>
+		  <ion-row>
+			<ion-col>
+			  <ion-text class="error" text-center>{{error}}</ion-text>
+			</ion-col>
+		  </ion-row>
+		  <ion-row>
+			<ion-col>
+			  <ion-text text-center class="block">Already have an account ?
+				<span class="bold" routerLink="/login">Login here</span></ion-text>
+			</ion-col>
+		  </ion-row>
+		</ion-card-content>
+	  </ion-card>
+	</div>
+</ion-content> -->

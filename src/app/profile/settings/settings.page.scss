@@ -1,0 +1,19 @@
+.active-item{
+    border-left:8px solid var(--ion-color-primary);
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header h1 {
+    margin-top: 0;
+}
+
+.button-container {
+    width: 80%;
+    margin-left: auto;
+}

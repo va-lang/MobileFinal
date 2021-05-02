@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>About</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="signOut()">
+        <ion-icon name="log-out" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <div class="container">
+    <div class="page-header">
+      <h1>Welcome to companionship App</h1>
+      <h3>Explore Us</h3>
+    </div>
+
+    <img src="../../assets/companionship.jpg" />
+
+    <div class="button-container">
+      <ion-button expand="block" class="main-button" routerLink="/profile/preference" >Get Started</ion-button>
+      
+    </div>
+  </div>
+</ion-content>

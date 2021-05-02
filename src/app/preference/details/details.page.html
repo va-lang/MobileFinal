@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Enter Info </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  
+
+
+  <ion-item>
+    <ion-label position="stacked">name</ion-label>
+    <ion-input [(ngModel)]="details.title" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">age</ion-label>
+    <ion-input [(ngModel)]="details.price" required></ion-input>
+  </ion-item>
+ 
+  
+
+  <ion-item>
+    <ion-label position="stacked">gender</ion-label>
+    <ion-textarea [(ngModel)]="details.gender" required></ion-textarea>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="stacked">Description"Tell us more about you.Prefences,what you looking for in your companionship partner(100-300)"</ion-label>
+    <ion-textarea  [(ngModel)]="details.description" rows="8" required></ion-textarea>
+  </ion-item>
+</ion-content>
+
+<div class="button-container">
+  <ion-button expand="block" class="main-button" routerLink="/profile/connect" >Connect</ion-button>
+  
+</div>
+ 
+<!-- <ion-footer class="ion-no-border" *ngIf="!details.id">
+  <ion-toolbar style="--background:#009FE3; color:#FFFFFF;">
+    <ion-button expand="full" fill="clear" color="light" (click)="addDetail()"
+    [disabled]="!details.name || !details.age || !details.gender|| !details.description">
+      <ion-icon name="checkmark" slot="start"></ion-icon>
+      Add Info
+    </ion-button>
+  </ion-toolbar>
+</ion-footer> -->
+ 
